@@ -1,0 +1,18 @@
+---
+version: "3.7"
+
+services:
+  web:
+    image: "caddy/caddy"
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: "always"
+    volumes:
+      - web__config:/config
+      - web__data:/data
+      - "$PWD/web/Caddyfile:/etc/caddy/Caddyfile"
+
+volumes:
+  web__config:
+  web__data:

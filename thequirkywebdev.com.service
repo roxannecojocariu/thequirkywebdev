@@ -1,0 +1,24 @@
+[Unit]
+Description=The Quirky Web Dev
+After=docker.service network-online.target
+Requires=docker.service network-online.target
+
+[Service]
+User=horcrux
+Group=horcrux
+Restart=always
+RemainAfterExit=yes
+WorkingDirectory=/home/horcrux/thequirkywebdev.com
+
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+TimeoutStopSec=30s
+LimitNOFILE=1048576
+LimitNPROC=512
+PrivateTmp=true
+ProtectSystem=full
+
+ExecStart=/home/horcrux/thequirkywebdev.com/bin/start
+ExecStop=/home/horcrux/thequirkywebdev.com/bin/stop
+
+[Install]
+WantedBy=multi-user.target
