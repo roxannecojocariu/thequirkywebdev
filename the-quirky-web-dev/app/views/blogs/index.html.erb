@@ -18,11 +18,11 @@
 			<% end %>
 		</div>
 
-    <div class="archives">
-      <span class="archives-title">ARCHIVES</span><br>
+	<div class="archives">
+	  <span class="archives-title">ARCHIVES</span><br>
 			<% @blogs.each do |blog| %>
 				<%= link_to blog.created_at.strftime("%B %d, %Y"), blogs_path(blog), class: "blog-link" %><br>
 			<% end %>
-    </div>
+	</div>
   </div>
 </div>
