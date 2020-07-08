@@ -9,6 +9,6 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # d space indentation
-[*.{js,jsx,rb,yml,yaml,scss,json,md}]
+[*.{js,jsx,rb,yml,yaml,scss,json,md,erb}]
 indent_style = space
 indent_size = 2
