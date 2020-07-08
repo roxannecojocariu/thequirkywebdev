@@ -1,0 +1,48 @@
+body {
+  background-color: #e3f2fd;
+  font-family: "Tahoma", Geneva, sans-serif;
+}
+
+.blog-container {
+  @extend .container;
+  margin-top: 5em;
+
+  .archives {
+    @extend .col-md-3;
+    @extend .offset-md-1;
+
+    .archives-title {
+      @extend .h6;
+      font-weight: 500;
+    }
+
+    .blog-link {
+      color: black;
+      font-size: small;
+    }
+  }
+
+  .blog-entries {
+    background-color: #89abbc;
+    border-radius: 10px;
+
+    .blog-title {
+      @extend .h6;
+      text-align: left;
+      padding: 1em 0 0 1em;
+
+      .blog-link {
+        color: black;
+      }
+    }
+
+    .blog-date {
+      font-size: small;
+    }
+
+    .blog-body {
+      margin: 0 2em 0 2em;
+      padding-bottom: 1em;
+    }
+  }
+}
