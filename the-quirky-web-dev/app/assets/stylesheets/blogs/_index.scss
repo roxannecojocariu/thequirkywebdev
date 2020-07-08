@@ -8,7 +8,7 @@ body {
   margin-top: 5em;
 
   .archives {
-    @extend .col-md-2;
+    @extend .col-md-3;
     @extend .offset-md-1;
 
     .archives-title {
