@@ -1,0 +1,11 @@
+.nav-bar {
+  @extend .navbar;
+  @extend .navbar-light;
+  @extend .fixed-top;
+  background-color: #89abbc;
+  box-shadow: 0px 2px #5e8395;
+}
+
+.site-title {
+  @extend .h4;
+}
