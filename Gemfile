@@ -23,6 +23,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
+gem 'devise'
+gem 'pry', '~> 0.13.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

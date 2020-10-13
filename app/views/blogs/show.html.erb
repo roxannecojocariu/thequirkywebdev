@@ -3,15 +3,15 @@
 		<div class="col-md-8">
       <div class="blog-entries">
         <div class="blog-title">
-          <%= blog.title %>
+          <%= @blog.title %>
 
           <div class="blog-date">
-            <%= blog.created_at.strftime("%B %d, %Y") %>
+            <%= @blog.created_at.strftime("%B %d, %Y") %>
           </div>
         </div>
 
         <div class="blog-body">
-          <%= blog.body %>
+          <%= @blog.body %>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="archives">
       <span class="archives-title">ARCHIVES</span><br>
 
-      <% blogs.each do |blog| %>
+      <% @blogs.each do |blog| %>
         <%= link_to blog.created_at.strftime("%B %d, %Y"), blog_path(blog), class: "blog-link" %><br>
       <% end %><br>
 
