@@ -2,6 +2,10 @@ class BlogsController < ApplicationController
   def index; end
   def show; end
 
+  def new
+    @blog = Blog.new
+  end
+
   private
 
   helper_method :blogs

@@ -5,7 +5,7 @@
         <div class="blog-title">
           <%= blog.title %>
 
-          <div class=blog-date>
+          <div class="blog-date">
             <%= blog.created_at.strftime("%B %d, %Y") %>
           </div>
         </div>
@@ -23,7 +23,7 @@
         <%= link_to blog.created_at.strftime("%B %d, %Y"), blog_path(blog), class: "blog-link" %><br>
       <% end %><br>
 
-      <%= link_to 'HOME', blogs_path, class: "back-to-home" %>
+      <%= link_to "HOME", blogs_path, class: "back-to-home" %>
     </div>
   </div>
 </div>
