@@ -1,0 +1,13 @@
+<%= form_with(model: blog) do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_area :title, class: "title-field" %>
+  </div><br>
+
+  <div>
+    <%= form.label :body %>
+    <%= form.rich_text_area :body, class: "body-field" %>
+  </div>
+  <br>
+    <%= form.submit :Submit, class: "submit-button" %>
+<% end %>

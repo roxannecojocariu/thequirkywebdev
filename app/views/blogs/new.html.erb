@@ -1,0 +1,7 @@
+<div class="form-container">
+  <h5 class="new-blog-title"> <%= "New Blog Post" %> </h5>
+
+  <%= render "form", blog: @blog %>
+
+  <%= link_to "Back", blogs_path, class: "back-to-home" %>
+</div>
